@@ -75,6 +75,13 @@ border:1px solid #5d3066;
   border-top-right-radius:30px;
   border: 5px, double, rgb(218, 170, 69);
   border-bottom: none;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.moneyIcon{
+  width: 35px;
+  height: 35px;
 }
 .shopInventory{
   background-color:white;

@@ -39,6 +39,7 @@ function App() {
           <>
             <div className="shopLabel">
               <h3 className="shopHeadline">Buy</h3>
+              <img src="./assets/money.png" className="moneyIcon" />
             </div>
             <div className="shopInventory">
               {shopInventory.map((item) => (
