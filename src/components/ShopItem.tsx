@@ -10,7 +10,10 @@ const ShopItem = ({ item, onClick, buttonText }: IShopItem) => {
     <div className="shopLine">
       <img src={item.img} className="shopIcons" />
       <p className="itemName">{item.name}</p>
-      <p className="itemPrice">Price: {item.price} Gold</p>
+      <p className="itemPrice">
+        Price: {item.price}{" "}
+        <img src="./assets/singlecoin.png" className="goldIcon" />
+      </p>
 
       {onClick && buttonText && (
         <button className="buyButton" onClick={() => onClick(item)}>

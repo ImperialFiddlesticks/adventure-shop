@@ -57,6 +57,7 @@ function App() {
           <>
             <div className="shopLabel">
               <h3 className="shopHeadline">Sell</h3>
+              <img src="./assets/back-pack.png" className="moneyIcon" />
             </div>
             <div className="yourInventory">
               {yourInventory.map((item) => (

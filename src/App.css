@@ -83,6 +83,10 @@ border:1px solid #5d3066;
   width: 35px;
   height: 35px;
 }
+.goldIcon{
+    width: 15px;
+  height: 15px;
+}
 .shopInventory{
   background-color:white;
   width: 450px; 
