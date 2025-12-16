@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import goods from "../data/InitialData";
 import type { IGood } from "../data/InitialData";
+
+export const ShopInventoryContext= createContext<IGood[]>([])
 
 export function useShopInventory() {
   const [shopInventory, setShopInventory] = useState<IGood[]>(goods);
@@ -11,6 +13,7 @@ export function useShopInventory() {
       prev.filter((shopItem) => shopItem.id !== item.id)
     );
     setYourInventory((prev) => [...prev, item]);
+    console.log(yourInventory)
   }
   function handleSell(item: IGood) {
     setYourInventory((prev) =>
